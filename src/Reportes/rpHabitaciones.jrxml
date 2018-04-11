@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rpHabitaciones" language="groovy" printOrder="Horizontal" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Error" uuid="3c4a6b8e-16b7-4cae-b761-04090acbafb6">
+	<property name="ireport.zoom" value="1.363636363636365"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="4"/>
+	<subDataset name="Table Dataset 1" uuid="b4d98e23-9a3b-44fb-b51e-d51ca2e1d89a"/>
+	<queryString>
+		<![CDATA[SELECT
+     habitación.`idhabitación` AS habitación_idhabitación,
+     habitación.`numero` AS habitación_numero,
+     habitación.`piso` AS habitación_piso,
+     habitación.`descripcion` AS habitación_descripcion,
+     habitación.`caracteristicas` AS habitación_caracteristicas,
+     habitación.`precio_diario` AS habitación_precio_diario,
+     habitación.`estado` AS habitación_estado,
+     habitación.`precio_x3h` AS habitación_precio_x3h,
+     habitación.`precio_xh` AS habitación_precio_xh,
+     habitación.`habitacióncol` AS habitación_habitacióncol
+FROM
+     `habitación` habitación]]>
+	</queryString>
+	<field name="habitación_idhabitación" class="java.lang.Integer"/>
+	<field name="habitación_numero" class="java.lang.String"/>
+	<field name="habitación_piso" class="java.lang.String"/>
+	<field name="habitación_descripcion" class="java.lang.String"/>
+	<field name="habitación_caracteristicas" class="java.lang.String"/>
+	<field name="habitación_precio_diario" class="java.lang.Double"/>
+	<field name="habitación_estado" class="java.lang.String"/>
+	<field name="habitación_precio_x3h" class="java.lang.Double"/>
+	<field name="habitación_precio_xh" class="java.lang.Double"/>
+	<field name="habitación_habitacióncol" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="708e0378-b1dc-4c38-aa0d-3a9e7a9fac9c"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="3846442c-92fd-47d3-ad79-d6fb6b508688"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Hotel Faraon]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="28">
+			<line>
+				<reportElement x="-1" y="27" width="556" height="1" uuid="bde58e7f-c109-4a2a-a97f-c7fbb3349f7b"/>
+			</line>
+			<staticText>
+				<reportElement x="192" y="0" width="220" height="27" forecolor="#000000" backcolor="#FFFFFF" uuid="39b89236-59ba-4771-8831-0b30a8073ab3"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Listado de Habitaciones]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Immediate">
+			<staticText>
+				<reportElement x="0" y="6" width="67" height="20" uuid="feac582f-56be-4cfe-8e17-bed16390446f"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Número]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="6" width="63" height="20" uuid="b258a320-a6fe-4f1a-b5ea-c12231e760c1"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Precio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="6" width="128" height="20" uuid="bc3fe6ed-4c8c-4d5f-9393-e8e7524a76f7"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="6" width="111" height="20" uuid="b634e269-456e-44a1-b298-4bc19aca7ca0"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Piso]]></text>
+			</staticText>
+			<line>
+				<reportElement x="67" y="0" width="1" height="38" uuid="466ffd69-f3a4-4bf5-9c3e-42ecb27e60af"/>
+			</line>
+			<line>
+				<reportElement x="179" y="0" width="1" height="38" uuid="ee77e0fb-a37e-4284-b899-8d7574791554"/>
+			</line>
+			<line>
+				<reportElement x="362" y="0" width="1" height="38" uuid="c96eff82-95ad-4089-907c-6083d87b175f"/>
+			</line>
+			<line>
+				<reportElement x="426" y="0" width="1" height="38" uuid="2c83e2bb-825a-4f6e-a994-01787f77af38"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="0" width="1" height="38" uuid="84e480ab-e98f-4505-a1d0-830b0dcefdc8"/>
+			</line>
+			<line>
+				<reportElement x="555" y="-1" width="1" height="39" uuid="78c1db36-3450-4948-86e4-256d0a4557c0"/>
+			</line>
+			<staticText>
+				<reportElement x="181" y="6" width="182" height="20" uuid="350ca77e-2b32-4345-96f1-6c36bfbe5707"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Caracteristicas]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32">
+			<textField>
+				<reportElement x="68" y="0" width="111" height="20" uuid="a75d799b-70b8-47ba-a790-6b608c13ccd2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{habitación_piso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="182" height="20" uuid="1907f556-b7de-411a-be00-1dca0078e2fa"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{habitación_caracteristicas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="363" y="0" width="63" height="20" uuid="9db55271-3b59-45b2-aefc-61adb9c08fbc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{habitación_precio_diario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="128" height="20" uuid="6dd8fe64-127b-4c1b-96b9-5194e54b51b3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{habitación_estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="67" height="20" uuid="4c20bf0d-ffbd-4d62-9e75-3700395ae3fd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{habitación_numero}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-1" y="0" width="1" height="32" uuid="4688806f-4ad2-4494-9a81-fea907c7194c"/>
+			</line>
+			<line>
+				<reportElement x="67" y="0" width="1" height="32" uuid="938399cf-46d4-45eb-bf70-c69f12834f34"/>
+			</line>
+			<line>
+				<reportElement x="179" y="0" width="1" height="32" uuid="43a3e816-0125-458e-bc35-88783607a7bf"/>
+			</line>
+			<line>
+				<reportElement x="426" y="0" width="1" height="32" uuid="3a5f3cf3-56d2-4f22-a421-509064c217ce"/>
+			</line>
+			<line>
+				<reportElement x="362" y="0" width="1" height="32" uuid="6a06b85e-46a0-4064-83ac-3c426717a43e"/>
+			</line>
+			<line>
+				<reportElement x="555" y="0" width="1" height="32" uuid="3eeabebb-ea77-408b-a1b0-d1da7080cca3"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="0" width="557" height="1" uuid="0f1603f8-e375-435b-a6de-370066e93bfc"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="59">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="555" height="13" backcolor="#E6E6E6" uuid="d5131a8a-b001-4dc4-8abf-5577defcf720"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Pagina "+$V{PAGE_NUMBER}+" de "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="5b1c7058-dac2-4584-b8c8-2726446d49c4"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="b35f46e6-9a72-4f2d-9caf-7cda2fa5abf4"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="556" height="1" uuid="8341d91c-d110-4949-9a84-25a94b3bfa0b"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

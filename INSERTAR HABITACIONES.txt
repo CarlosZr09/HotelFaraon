@@ -1,0 +1,26 @@
+﻿INSERTAR HABITACIONES
+
+
+INSERT INTO `habitación` (`idhabitación`, `numero`, `piso`, `descripcion`, `caracteristicas`, `precio_diario`, `estado`, `precio_x3h`, `precio_xh`) VALUES
+(1, '201', '2', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(2, '202', '2', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(3, '203', '2', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(4, '204', '2', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Limpiar', 35, 8),
+(5, '205', '2', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(6, '301', '3', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(7, '302', '3', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(8, '303', '3', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(9, '304', '3', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(10, '305', '3', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(11, '401', '4', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(12, '402', '4', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(13, '403', '4', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(14, '404', '4', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(15, '405', '4', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(16, '406', '4', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(17, '501', '5', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(18, '502', '5', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(19, '503', '5', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(20, '504', '5', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(21, '505', '5', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8),
+(22, '506', '5', 'Habitacion ', '1 Cama , espejos , tv led , baño', 45, 'Disponible', 35, 8);
